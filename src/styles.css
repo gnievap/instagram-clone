@@ -29,7 +29,7 @@ a{
 }
 
 .main--login{
-    width: 90px;
+    width: 90%;
     margin: 20px auto;
 }
 
@@ -52,7 +52,7 @@ a{
 }
 
 .login--form .form--input{
-    /*width: 100%; */
+    width: 100%; 
     padding: 10px;
     margin: 10px 0;
     border-radius: 4px;
@@ -62,7 +62,6 @@ a{
 .login--form .form--button{
     display: block;
     padding: 10px;
-    margin: 0 auto;
     width: 80px;
     margin: 0 auto;
 }
