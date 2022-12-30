@@ -1,6 +1,7 @@
 :root{
-    --gray-color: gray;
+    --gray-color: #8e8eaa;
     --blue-color: #3851a4;
+    --buttons-color: #afdcf9;
 }
 
 /* Reset values */
@@ -27,6 +28,11 @@ ul{
 a{
     text-decoration: none;
 }
+
+.main--carousel{
+    display: none;
+}
+
 
 .main--login{
     width: 90%;
@@ -64,6 +70,11 @@ a{
     padding: 10px;
     width: 80px;
     margin: 0 auto;
+    background-color: var(--buttons-color);
+    width: 100%;
+    border: 0;
+    color: white;
+    font-weight: 600;
 }
 
 .divisor{
@@ -102,4 +113,89 @@ a{
 .alternative--paragraph{
     margin-top: 60px;
     text-align: center;
+}
+
+.links--paragraph{
+    margin: 50px 0 25px;
+    text-align: center;
+}
+
+.alternative--link__blue{
+    color: var(--blue-color);
+    font-weight: 700;
+}
+
+/* Buttons img */
+
+.links--list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.links--list img{
+    width: 90%;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+.footer--list{
+    display: flex;
+    width: 90%;
+    margin: 20px auto ;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 768px;
+    font-size: 1.4rem;
+}
+
+.footer--list li{
+    margin: 5px;
+}
+
+.footer--list li a{
+    color: var(--gray-color);
+}
+
+@media (min-width: 768px) {
+    body{
+        background-color: #fafafa;
+    }
+
+     .main--login{
+        border: 1px solid var(--gray-color);
+        background-color: white;
+        padding: 15px;
+        border-radius: 10px;
+        max-width: 370px;
+    }
+}
+
+@media (min-width: 1024px){
+    .main{
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 850px;
+    }
+
+    .main--carousel{
+        position: relative;
+        display: block;
+        background-image: url("./imgs/case.png");
+        background-size: cover;
+        width: 400px;
+        height: 600px;
+    }
+
+    .main--carousel img{
+        position: absolute;
+        right: 15px;
+        bottom: 56px;
+        height: 87%;
+    }
 }
